@@ -1,0 +1,6 @@
+/* style.css */
+
+.logo {
+    display: grid;
+    justify-self: center;
+}
