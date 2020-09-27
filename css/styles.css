@@ -4,7 +4,13 @@ body {
     font-family: arial, sans-serif;
     height: auto;
     margin: 17px;
+}
 
+#google-photo {
+    position: relative;
+    margin-top: 50px;
+    min-width: 200px;
+    max-width: 300px;
 }
 
 .nav {
@@ -67,6 +73,16 @@ button {
     margin-right: auto;
 }
 
+.right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .shrink {
     width: 33%;
 }
@@ -75,21 +91,95 @@ button {
     width: 73%;
     margin-top: 15px;
     border-radius: 50px;
-    border-width: .01px;
+    border: .01px solid;
     border-color: #bdbaba;
     height: 40px;
 }
 
+.search-bar input[type="text"] {
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
 .search-bar {
     position: relative;
-    display: flex;
-    min-width: 100px;
+    width: 500px;
 
 }
 
-.search-bar .search-icon {
+.search-bar img {
     width: 15px;
     opacity: 40%;
     position: absolute;
+    top: 13px;
+    left: 80px;
 
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.middle button{
+    font-size: 15px;
+    color: rgb(95,99,104);
+    margin: 0px 10px 0px 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 8px 18px 8px 18px;
+    text-decoration: none;
+}
+
+.middle button:hover {
+    color: #222;
+    background: linear-gradient( #f8f8f8, #f1f1f1);
+    padding: 7px 17px 7px 17px;
+    border: 1px solid;
+    border-color: #c6c6c6;
+}
+
+.languages {
+    font-size: 13px;
+}
+
+.languages a{
+    margin: 0px 4px 0px 4px; 
+}
+.lang-link {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.lang-link:hover {
+    color: #1a0dab;
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1;
+    color: rgba(0,0,0,.54);
+    background-color: rgb(242, 242, 242);
+    font-size: 15px;
+    margin: 0px;
+}
+
+footer p{
+    padding: 10px
+}
+footer a{
+    color: rgba(0,0,0,.54);
+    margin: 0px 10px 0px 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
